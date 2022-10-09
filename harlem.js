@@ -112,7 +112,7 @@ for (var i1 = 0; i1 < 2; i1++) {
     var audioTag = document.createElement("audio");
     audioTag.setAttribute("class", FILE_ADDED_CLASS);
     audioTag.src = PATH_TO_SONG;
-    if (i1 == 0) {
+    if (i1 < 1) {
 	audioTag.muted = true;    
 }
     audioTag.loop = false;
@@ -209,11 +209,12 @@ for (var i1 = 0; i1 < 2; i1++) {
 
   var allShakeableNodes = [];
 
-  for (i = 0; i < len; i++) {
-    thisNode = allNodes[i];
-		if (thisNode.nodeName != "DIV") {
+  for (i = 0; i < len / 3; i++) {
+    // thisNode = allNodes[i];
+	  thisNode = randNode();
+		// if (thisNode.nodeName != "DIV") {
     allShakeableNodes.push(thisNode);
-}
+// }
   }
 
 })();
