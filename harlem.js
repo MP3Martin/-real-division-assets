@@ -10,7 +10,7 @@ function randNode() {
 
 }
 
-for (var i1 = 0; i1 < 2; i1++) {
+for (var i1 = 0; i1 < 5; i1++) {
 
 (function() {
 
@@ -112,7 +112,7 @@ for (var i1 = 0; i1 < 2; i1++) {
     var audioTag = document.createElement("audio");
     audioTag.setAttribute("class", FILE_ADDED_CLASS);
     audioTag.src = PATH_TO_SONG;
-    if (i1 < 1) {
+    if (i1 != 0) {
 	audioTag.muted = true;    
 }
     audioTag.loop = false;
